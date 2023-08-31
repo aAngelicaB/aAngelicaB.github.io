@@ -1,0 +1,515 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+
+
+/* Estilo a toda la página */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif; 
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+/*Estilo a toda la pagina*/
+
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #598416;
+}
+
+p {
+    font-size: 30px;
+    font-weight: 800;
+    color: #598416;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #DA3939;
+    font-family: "Jua", sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+/* Fondo al header */
+header {
+    background-color: #ffffff;
+}
+
+/* tamano del menu de navegación y alineacion */
+.menunav {
+    max-width: 1140px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tamañno al logo */
+.logotipo img {
+    width: 160px;
+}
+
+/* alineación a la derecha del las sección del menu */
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 70px;
+
+}
+
+/* centrar la lsita de menu */
+.menu nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+/* quitar estilo a la lsita de menu */
+.menu nav li {
+    list-style: none;
+}
+
+/* darle estilo al titulo de la lista de menu */
+.menu nav li a {
+    text-decoration: none;
+    color: #DA3939;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+    font-family: "Inter";
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #0400ff00;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #DA3939;
+    font-family: "Inter";
+    font-size: 22px;
+}
+
+.abrir-menu,
+.cerrar-menu,.logo-burguer {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .img-button {
+        width: 100%;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo-burguer {
+        display: block;
+        max-width: 5rem;
+    }
+
+    .abrir-menu {
+        color: #ffffff;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #0400ff;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        width: 100%;
+        height: 100%;
+        padding: 2rem;
+        flex-direction: column;
+        align-items: end;
+        background-color: white;
+
+    }
+
+    .nav-list li a {
+        color: #000000ec;
+    }
+}
+
+/*tamaño del menu de navegación y alinacion*/
+.portada{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 50px 0;
+    color:#598416
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.portada .bt-enviar {
+    background-color: #598416;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 230px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 20px;
+}
+
+.sabor .bt-enviar1 {
+    background-color: #DA3939;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 180px;
+    font-weight: 800;
+    font-family: "Inter";
+    font-size: 20px;
+}
+
+
+
+
+.titulo {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.BENEFICIOS{
+    display: flex;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#subtema{
+    background-color:#DA3939;
+}
+
+.p-pie{
+    background-color: #598416;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+#Pie{
+    background-color: #598416;
+    padding: 20px;
+}
+
+
+.subtema {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #DA3939;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+}
+
+
+.testimonio {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 80px;
+}
+
+
+.cliente {
+    padding: 40px;
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sabor {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    background-color: #da39396c;
+}
+
+input {
+    border-style: none;
+    border-radius: 10px;
+}
+
+
+/*
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+*/
+
+.p-texto {
+    background-color: #d61f1f00;
+    padding: 10px;    
+}
+
+.p-imagen {
+    background-color: #ffffff;
+    padding: 10px;    
+}
+
+.p-texto h1 {
+    background-color: #b6222200;
+    border: solid 3px #0bb80500;
+    padding: 10px;    
+}
+
+.p-imagen h1 {
+    background-color: #5a841600;
+    border: solid 3px #5a841600;
+    padding: 3px;
+    font-family: Jua;
+}
+
+.p-imagen p {
+    background-color: #ffffff;
+    padding: 3px;
+    font-family: Jua;
+}
+
+.p-rellenar input{
+    background-color: #ffffff;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.p-imagen input{
+    background-color: #BDDD8B70;
+    padding: 10px 10px;
+    width: 100%;
+}
+.bt-enviar button{
+    background-color: #598416;
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 58px;
+}
+
+.p-parrafo {
+    background-color:#DA3939;
+    padding: 20px ;
+}
+
+.p-parrafo h2 {
+    padding: 10px;
+    font-family: "Inter";
+    color: #FFF;
+    text-align: justify;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.titulo h2{
+    background-color: #DA3939;
+    color: #ffffff;
+}
+
+.p-parrafo h1 {
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.bt-llamar {
+    background-color: #FFB1B1;
+    display: flex;
+    justify-content: center;
+    color: #DA3939;
+    text-align: center;
+    font-size: 22px;
+    border-radius: 8px;
+    font-family: "Inter";
+    font-weight: 600;
+    padding: 10px;
+    width: 100%;
+    border: #5a841600;
+    }
+
+.bt-llamar a button{
+    width: 100%;
+    border-style: none;
+    background-color: #FFB1B1;
+    padding: 0 300px;
+    cursor: pointer;
+    font-family: "Inter";
+    font-weight: 900;
+    color: #DA3939;
+    font-size: 22px;
+}
+.p-cliente h1 {
+    color: #598416;
+    font-family: "Jua";
+    font-size: 30px;
+    text-align: center;
+}
+
+.p-testimonio h2 {
+    color: #598416;
+    background-color: #ffffff;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 750;
+    line-height: normal;
+    text-align: justify;
+}
+
+.p-testimonio img {
+    background-color: #BDDD8B70;
+    width: 100%;
+}
+
+.p-testimonio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.p-sabor h1{
+    font-family: "Jua";
+    color:#DA3939;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.p-sabor h2{
+    font-family: "Inter";
+    color: #da3939;
+    font-size: 25px;
+    text-align: left;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 600;
+}
+
+.p-pie p{
+    font-family: "Inter";
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.p-rellenar {
+    color: #DA3939;
+}
+
+/*
+.p-texto {
+    display: grid;
+    align-items: center;
+    justify-items: start;
+    gap: 25px;
+}
+
+.p-imagen { 
+    display: grid;
+    aling-items: start;
+    justify-items: start;
+    gap: 25px;
+}
+
+*/
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #598416;
+}
+
+.rellenar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+#nombre {
+    width: 100%;
+}
+
+@media (max-width: 767) {
+
+}
