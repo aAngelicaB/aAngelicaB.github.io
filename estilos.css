@@ -3,513 +3,453 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
 
-
 /* Estilo a toda la página */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Jua', sans-serif; 
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Jua', sans-serif; 
+  font-family: 'Inter', sans-serif;
 }
 
-/*Estilo a toda la pagina*/
-
-h1{
-    font-size: 50px;
-    font-weight: 700;
-    color: #598416;
-}
-
-p {
-    font-size: 30px;
-    font-weight: 800;
-    color: #598416;
-}
-
-h2{
-    font-size: 30px;
-    font-weight: 500;
-    color: #DA3939;
-    font-family: "Jua", sans-serif;
-    text-align: center;
-    margin: auto;
-}
-
-/* Fondo al header */
-header {
-    background-color: #ffffff;
-}
-
-/* tamano del menu de navegación y alineacion */
-.menunav {
-    max-width: 1140px;
-    height: 80px;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Tamañno al logo */
-.logotipo img {
-    width: 160px;
-}
-
-/* alineación a la derecha del las sección del menu */
-.menu {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 70px;
-
-}
-
-/* centrar la lsita de menu */
-.menu nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-}
-
-/* quitar estilo a la lsita de menu */
-.menu nav li {
-    list-style: none;
-}
-
-/* darle estilo al titulo de la lista de menu */
-.menu nav li a {
-    text-decoration: none;
-    color: #DA3939;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 1000;
-    line-height: normal;
-    font-family: "Inter";
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #0400ff00;
-}
-
-.logo {
-    max-width: 5rem;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
 }
 
-.nav-list li a {
-    text-decoration: none;
-    color: #DA3939;
-    font-family: "Inter";
-    font-size: 22px;
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40vh;
+  padding: 0 30px 30px 30px;
 }
 
-.abrir-menu,
-.cerrar-menu,.logo-burguer {
-    display: none;
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  width: 100%;
 }
 
-@media screen and (max-width: 550px) {
-    .abrir-menu,
-    .cerrar-menu {
-        display: block;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
-
-    .img-button {
-        width: 100%;
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo-burguer {
-        display: block;
-        max-width: 5rem;
-    }
-
-    .abrir-menu {
-        color: #ffffff;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: #0400ff;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .nav-list {
-        width: 100%;
-        height: 100%;
-        padding: 2rem;
-        flex-direction: column;
-        align-items: end;
-        background-color: white;
-
-    }
-
-    .nav-list li a {
-        color: #000000ec;
-    }
+.menu .nav ul li {
+  position: relative;
+  float: left;
 }
 
-/*tamaño del menu de navegación y alinacion*/
+.navbar ul{
+  display: flex;
+
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+  padding: 20px;
+  font-family: "Inter";
+  color: #DA3939;
+  display: block;
+  font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+  color: #d9e80b;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono{
+  width: 25px;
+}
+
+.menu label {
+  cursor:pointer;
+  display: none;
+}
+
+.header-txt h1{
+  font-family: "Jua";
+  font-size: 50px;
+  line-height: 45px;
+  color:#598416
+}
+
+.header-txt p{
+  font-size: 16px;
+  font-family: "Jua";
+  color: #598416;
+}
+
+.btn-enviar {
+  display: inline-block;
+  padding: 13px 25px;
+  background: #DA3939;
+  text-transform: capitalize;
+}
+
+.btn-enviar:hover {
+  background-color:#da393998;
+}
+
+.header-content { 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+
+.header-txt {
+  width: 50%;
+}
+
+.header img {
+  width: 60%;
+  text-align: right;
+}
+
+.header-img img {
+  width: 500px;
+}
+
 .portada{
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 50px 0;
-    color:#598416
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 50px 0;
+  color:#598416
 }
 
-.portada {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.portada .bt-enviar {
-    background-color: #598416;
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 10px 230px;
-    font-weight: 800;
-    font-family: "Inter";
-    font-size: 20px;
-}
-
-.sabor .bt-enviar1 {
-    background-color: #DA3939;
-    color: #ffffff;
-    border-radius: 10px;
-    padding: 10px 180px;
-    font-weight: 800;
-    font-family: "Inter";
-    font-size: 20px;
+.header-txt .formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: #598416;
 }
 
 
 
-
-.titulo {
-    max-width: 1140px;
-    margin: 0 auto;
+.beneficios {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #DA3939;
 }
 
-.BENEFICIOS{
-    display: flex;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 20px 0;
-    flex-direction: column;
-    gap: 2px;
-}
-
-#subtema{
-    background-color:#DA3939;
-}
-
-.p-pie{
-    background-color: #598416;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 20px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
-}
-
-#Pie{
-    background-color: #598416;
-    padding: 20px;
+.beneficios h2 {
+  font-family: "Jua";
+  font-size: 50px;
+  margin: 30px 0 20px 0;
+  color: #ffff;
 }
 
 
-.subtema {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 20px 0;
-    background-color: #DA3939;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
+.beneficios-content .container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
 }
 
-
-.testimonio {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 40px 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 80px;
+.beneficios-1 h3 {
+  font-family: "Inter";
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffff;
 }
 
+.beneficios-1 p{
+  font-size: 16px;
+  color:#ffff;
+  font-weight: 800;
+}
 
 .cliente {
-    padding: 40px;
-    max-width: 1240px;
-    width: 100%;
-    margin: 0 auto;
+  margin: -5px;
+  padding: 50px 0;
+  text-align: center;
 }
 
-.sabor {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    background-color: #da39396c;
+.cliente h2{
+  font-size: 50px;
+  font-family: "Jua";
+  margin-bottom: 50px;
+  color: #598416;
 }
 
-input {
-    border-style: none;
-    border-radius: 10px;
+.cliente-1 {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.cliente-txt {
+  width: 50%;
+}
+
+.cliente-in {
+  margin-left: 20px;
+}
+
+.cliente-in h3{
+  font-family: "Inter";
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.cliente-in p{
+  font-size: 16px;
+  color: #598416;
+  font-weight: 900;
+}
+
+.cliente-img {
+  width: 50%;
+}
+
+.cliente-img img{
+  width: 500px;
+}
+
+.bg-contacto2 {
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-contacto {
+  padding: 50px 0;
+  text-align: center;
+  flex-direction: column;
+  background-color: #FEC0C0;
+}
+
+.menu-contacto h2{
+  font-size: 50px;
+  font-family: "Jua";
+  margin-bottom: 50px;
+  color: #DA3939;
+}
+
+.menu-content {
+  display: grid;
+  grid-gap: 35px;
 }
 
 
-/*
-.portada {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+.menu-1 h3{
+  font-size: 40px;
+  font-family: "Inter";
+  margin-bottom: 15px;
 }
 
-*/
-
-.p-texto {
-    background-color: #d61f1f00;
-    padding: 10px;    
+.menu-1 p{
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #DA3939;
 }
 
-.p-imagen {
-    background-color: #ffffff;
-    padding: 10px;    
+.menu-1 {
+  grid-template-columns: repeat(2,1fr);
 }
 
-.p-texto h1 {
-    background-color: #b6222200;
-    border: solid 3px #0bb80500;
-    padding: 10px;    
+.menu-1.rellenar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.p-imagen h1 {
-    background-color: #5a841600;
-    border: solid 3px #5a841600;
-    padding: 3px;
-    font-family: Jua;
+.from.rellenar{
+  flex-direction: column;
 }
 
-.p-imagen p {
-    background-color: #ffffff;
-    padding: 3px;
-    font-family: Jua;
+.footer {
+  padding: 50px 0;
+  background-color: #598416;
 }
 
-.p-rellenar input{
-    background-color: #ffffff;
-    padding: 10px 10px;
-    width: 100%;
+.footer-content { 
+  display: flex;
+  justify-content: space-between;
 }
 
-.p-imagen input{
-    background-color: #BDDD8B70;
-    padding: 10px 10px;
-    width: 100%;
-}
-.bt-enviar button{
-    background-color: #598416;
-    padding: 10px 25px;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 58px;
+.conocenos {
+  width: 30%;
 }
 
-.p-parrafo {
-    background-color:#DA3939;
-    padding: 20px ;
+.conocenos p{
+  color: #ffff;
 }
 
-.p-parrafo h2 {
-    padding: 10px;
-    font-family: "Inter";
-    color: #FFF;
-    text-align: justify;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+.link h3{
+  color: #ffff;
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 
-.titulo h2{
+.link a{
+  font-size: 15px;
+  display: block;
+  margin-bottom: 10px;
+  color: #ffff;
+}
+
+.link a:hover {
+  color:rgb(227, 243, 8)
+}
+
+
+
+@media (max-width:991px){
+  .menu {
+    padding: 30px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     background-color: #DA3939;
-    color: #ffffff;
-}
+    display: none;
+  }
 
-.p-parrafo h1 {
-    color: #FFF;
-    font-family: "Inter";
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-}
-
-.bt-llamar {
-    background-color: #FFB1B1;
-    display: flex;
-    justify-content: center;
-    color: #DA3939;
-    text-align: center;
-    font-size: 22px;
-    border-radius: 8px;
-    font-family: "Inter";
-    font-weight: 600;
-    padding: 10px;
+  .menu .nav ul li {
     width: 100%;
-    border: #5a841600;
-    }
+  }
 
-.bt-llamar a button{
-    width: 100%;
-    border-style: none;
-    background-color: #FFB1B1;
-    padding: 0 300px;
-    cursor: pointer;
-    font-family: "Inter";
-    font-weight: 900;
-    color: #DA3939;
-    font-size: 22px;
-}
-.p-cliente h1 {
-    color: #598416;
-    font-family: "Jua";
-    font-size: 30px;
-    text-align: center;
-}
+  .menu .navbar ul li a{
+    color: #ffff;
+  }
 
-.p-testimonio h2 {
-    color: #598416;
-    background-color: #ffffff;
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 750;
-    line-height: normal;
-    text-align: justify;
-}
+  #menu:checked~ .navbar{
+    display: initial;
+  }
 
-.p-testimonio img {
-    background-color: #BDDD8B70;
-    width: 100%;
-}
+  .header{
+    min-height: 0vh;
+  }
 
-.p-testimonio {
-    display: flex;
+  .header-content{
     flex-direction: column;
-    justify-content: center;
-}
-.p-sabor h1{
-    font-family: "Jua";
-    color:#DA3939;
-    font-weight: 400;
+    padding: 100px 30px 30px 30px ;
+    text-align: center;
+  }
+
+
+  .header-txt {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .header-txt h1 {
     font-size: 60px;
-}
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
 
-.p-sabor h2{
-    font-family: "Inter";
-    color: #da3939;
-    font-size: 25px;
-    text-align: left;
-    font-style: normal;
-    line-height: normal;
-    font-weight: 600;
-}
-
-.p-pie p{
-    font-family: "Inter";
-    font-size: 16px;
-    color: #ffffff;
-}
-
-.p-rellenar {
-    color: #DA3939;
-}
-
-/*
-.p-texto {
-    display: grid;
-    align-items: center;
-    justify-items: start;
-    gap: 25px;
-}
-
-.p-imagen { 
-    display: grid;
-    aling-items: start;
-    justify-items: start;
-    gap: 25px;
-}
-
-*/
-.formulario {
+  .header-img{
     width: 100%;
-    display: flex;
+  }
+
+  .header-img img {
+    width: 100%;
+  }
+
+  .beneficios{
+    padding: 30px;
+    background-color: #DA3939;
+  }
+
+  .beneficios h2{
+    margin: 0;
+  }
+
+  .beneficios-content{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    color: #598416;
-}
+    margin-bottom: 15px;
+  }
 
-.rellenar {
-    width: 100%;
-    display: flex;
+  .beneficios-1 {
+    padding: 0 25px;
+    margin-bottom: 25px;
+  }
+
+  .cliente {
+    padding: 30px;
+  }
+
+  .cliente-1 {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
+  }
 
-
-
-#nombre {
+  .cliente-txt {
     width: 100%;
-}
+  }
 
-@media (max-width: 767) {
+  .cliente-in {
+    margin-left: 40px;
+  }
 
+  .cliente-img {
+    width: 100%;
+    order: 2;
+  }
+
+  .cliente-img img {
+    width: 100%;
+  }
+  .bg-contacto2 {
+    display: none;
+  }
+
+  .menu-contacto{
+    padding: 30px;
+  }
+
+  .menu-contacto h2 {
+    margin-bottom: 10px;
+  }
+
+  .menu-content {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .footer {
+    padding: 30px;
+  }
+
+  .footer-content{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .conocenos {
+    text-align: center;
+  }
 }

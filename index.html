@@ -1,180 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fruta de Estación</title>
-  <link rel="stylesheet" href="estilos.css">
-  <link rel="shortcut icon" href="Imagenes/LOGO.ico" type="image/x-icon">
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-<div class="elfsight-app-72a9c75a-3033-4099-aa26-14e8081c9632"></div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruta de Estación</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="shortcut icon" href="Imagenes/LOGO.ico" type="image/x-icon">
+    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <div class="elfsight-app-72a9c75a-3033-4099-aa26-14e8081c9632"></div>
 </head>
-<!--Contenido de mi pagina-->
 <body>
-    <header id="Inicio">
-        <!-- Menu de navegación -->        
-        <div class="menunav">
-            <!-- Sección del logotipo de mi pagina -->
-             <div class="logotipo">
-                <!-- ruta del logotipo -->
-                 <img src="Imagenes/Group 2.png" alt="" >
-             </div>
-             <!-- Boton abrir -->
-             <butoon id= "abrir" class="abrir"><i class= "bi bi-list"></i></butoon>
-             <!-- Sección del menu -->
-             <div class="menu">
-                <!-- Boton cerrar -->
-                <button id="cerrar" class="abrir"><i class="bi bi-list"></i></button>
-                <!-- Lista de menu -->
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Equipo</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                    </ul>
-                </nav>
-
-                <!-- Mi boton de contacto -->
-                <a href="#" class="bt-contacto">
-                    <button type="button">Contactar</button>
-                </a>
-            </div>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"><img src="Imagenes/IMAGOTIPOP.png" alt="logo"></a>
+            <input type="checkbox"id= "menu">
+            <label for="menu">
+                <img src="Imagenes/menu.svg" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
 
-    <header>
-        <img class="logo" src="Imagenes/LOGO.png" alt="Logo">
-        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-        <nav class="nav" id="nav">
-            <div class="img-button">
-                <img class="logo-burguer" id="logo" src="Imagenes/LOGO.png" alt="Logo">
-                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="Imagenes/mermelada.png" alt="">
             </div>
-            <ul class="nav-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Quiénes somos</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Qué hacemos</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-
-    <section id="portada">
-        <div class="portada">
-            <div class="p-texto">
-                <img src="Imagenes/detacada-mermelada 2 (1).png" alt="">
-            </div>
-            <div class="p-imagen">
+            <div class="header-txt">
                 <h1>Te recomendamos probarlas cuanto antes…</h1>
-                <p>Y si todavía no lo has hecho, ¡Contacta con nosotros! Te ayudaremos a tomar la mejor decisión ¿Te lo vas a perder?</p>
+                <p>
+                    Y si todavía no lo has hecho, ¡Contacta 
+                    con nosotros! Te ayudaremos a tomar la mejor 
+                    decisión ¿Te lo vas a perder?
+                </p>
                 <form class="formulario">
-                        <input type="text" name="" id="nombre" value="Mi nombre es:">
-                        <input type="text" name="" id="" value="Mi apellido es:">
-                        <input type="text" name="" id="" value="Correo electrónico">
-                        <input type="submit" class="bt-enviar" name="" id="" value="Enviar">
+                    <input type="text" name="" id="nombre" value="Mi nombre es:">
+                    <input type="text" name="" id="" value="Mi apellido es:">
+                    <input type="text" name="" id="" value="Correo electrónico">
+                    <input type="submit" class="btn-enviar" name="" id="" value="Enviar">
                 </form>
             </div>
         </div>
+    </header>
+    
+
+    <section class="beneficios">
+        <h2>DESCUBRE SUS BENEFICIOS ¡TIENEN MUCHOS!</h2>
+        <div class="beneficios-content container">
+            <div class="beneficios-1">
+                <h3>Contienen</h3>
+                <p>
+                    Bajo en grasas y proteínas, y su alto 
+                    porcentaje de azúcares sencillos.
+                </p>
+            </div>
+            <div class="beneficios-1">
+                <h3>Reduce</h3>
+                <p>
+                    De sufrir un derrame cerebral y enfermedades 
+                    cardiovasculares.
+                </p>
+            </div>
+            <div class="beneficios-1">
+                <h3>Recomendable</h3>
+                <p>
+                    Para los niños con alta actividad física en 
+                    el colegio y los deportistas.
+                </p>
+            </div>
+            <div class="beneficios-1">
+                <h3>Disminuye</h3>
+                <p>
+                    El desarrollo de cánceres en el estómago, 
+                    la boca y el colón.
+                </p>
+            </div>
+            <div class="beneficios-1">
+                <h3>Promueven</h3>
+                <p>
+                    La salud de la piel, el cabello, los huesos 
+                    y las uñas de los dedos.
+                </p>
+            </div>
+            <div class="beneficios-1">
+                <h3>Aprovecha</h3>
+                <p>
+                    La pulpa como la piel, consumiendola de forma 
+                    íntegra la fruta.
+                </p>
+            </div>
+        </div>
+        <a href="#" class="bnt-1">Llama a la acción</a>
     </section>
-</body>
-</html>
 
-    <section id="subtema">
-        <div class="BENEFICIOS">
-            <div class="subtitulo">
-                <div class="titulo">
-                    <h2>DESCUBRE SUS BENEFICIOS ¡TIENE MUCHOS!</h2>
-                </div>
-            </div>
-            <div class="subtema">
-                <div class="p-parrafo">
-                    <h1>CONTENIDO</h1>
-                    <h2>Bajo en grasas y proteínas, y su alto porcentaje de azúcares sencillos.</h2>
-                    <h1>DISMINUYE</h1>
-                    <h2>El desarrollo de cánceres en el estómago, la boca y el colón.</h2>
-                </div>
-                <div class="p-parrafo">
-                    <h1>REDUCE</h1>
-                    <h2>De sufrir un derrame cerebral y enfermedades cardiovasculares.</h2>
-                    <h1>PROMUEVE</h1>
-                    <h2>La salud de la piel, el cabello, los huesos y las uñas de los dedos.</h2>
-                </div>
-                <div class="p-parrafo">
-                    <h1>RECOMENDABLE</h1>
-                    <h2>Para los niños con alta actividad física en el colegio y los deportistas.</h2>
-                    <h1>APROVECHA</h1>
-                    <h2>La pulpa como la piel, consumiendola de forma íntegra la fruta.</h2>
-                </div>
-            </div>
-            <div class="bt-llamar">
-                <a href="#">
-                <button type="button">LLAMA A LA ACCIÓN</button>
-                </a>
 
+    <section class="cliente">
+        <h2>TESTIMONIOS DE NUESTROS CLIENTES</h2>
+        <div class="cliente-content container">
+            <div class="cliente-1">
+                <div class="cliente-txt"></div>
+                <div class="cliente-info">
+                    <img src="Imagenes/abuelos.png" alt="">
+                    <div class =cliente-in>
+                        <p>
+                            “Mi esposa y yo, desde mucho nos gusta 
+                            la mermelada, pero esta sin duda tiene 
+                            un sabor unico y dulce”
+                        </p>
+                    </div>
+                </div>
+                <div class="cliente-info">
+                    <img src="Imagenes/señora.png" alt="">
+                    <div class="cliente-in">
+                        <p>
+                            “Soy madre de familia, aquella 
+                            mermelada aprovecha la pulpa  de las frutas, 
+                            sin duda las mejores que he probado”
+                        </p>
+                    </div>
+                </div>
+                <div class="cliente-info">
+                    <img src="Imagenes/señor.png" alt="">
+                    <div class="cliente-in">
+                        <p>
+                            “Tengo un hermana pequeña, y lo que nos 
+                            gusta hacer es preparar bocadillos para la 
+                            familia, somos un buen equipo”
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-<div class="cliente">
-    <div class="p-cliente">
-        <h1>TESTIMONIO DE NUESTROS CLIENTES</h1>
-    </div>
-    <section id="testimonio">
-        <div class="testimonio">
-            <div class="p-testimonio">
-                <img src="Imagenes/a.png" alt="">
-                <h2>“Mi esposa y yo, desde mucho nos gusta la mermelada, pero esta sin duda tiene un sabor unico y dulce”</h2>
+
+
+    <section class="bg-contacto2"></section>
+    <main class="menu-contacto container">
+        <h2>Disfruta del sabor inigualable</h2>
+        <div class="menu-content">
+            <div class="menu-1">
+                <p>
+                    Tenemos una gran variedad de mermeladas tradicionales, 
+                    de tomate, de fresa, caramelizada… ¡Se nos hace agua a 
+                    la boca con solo nombrarlo!
+                </p>
+                <form class="rellenar">
+                    <input type="text" name="" id="nombre" value="Mi nombre es:">
+                    <input type="text" name="" id="" value="Mi apellido es:">
+                    <input type="text" name="" id="" value="Correo electrónico">
+                    <input type="submit" class="btn-enviar" name="" id="" value="Enviar">
+                </form>
             </div>
-            <div class="p-testimonio">
-                <img src="Imagenes/f.png" alt="">
-                <h2>“Soy madre de familia, aquella mermelada aprovecha la pulpa  de las frutas, sin duda las mejores que he probado”</h2>
-            </div>
-            <div class="p-testimonio">
-                <img src="Imagenes/s.png" alt="">
-                <h2>“Tengo un hermana pequeña, y lo que nos gusta hacer es preparar bocadillos para la familia, somos un buen equipo”</h2>
-            </div>
-    </section>
-<div>
-    <section id="sabor">
-        <div class="sabor">
-            <div class="p-sabor">
-                <h1>Disfruta del sabor inigualable</h1>
-                <h2>Tenemos una gran variedad de mermeladas tradicionales, de tomate, de fresa, caramelizada… ¡Se nos hace 
-                    agua a la boca con solo nombrarlo!</h2>
-            </div>
-            <div class="p-rellenar">
-                <from class="rellenar">
-                    <label for="">
-                        <input type="text" name="" id="nombre" value="Mi nombre es:">
-                    </label>
-                    <label for="">
-                        <input type="text" name="" id="" value="Mi apellido es:">
-                    </label>
-                    <label for="">
-                        <input type="text" name="" id="" value="Correro electrónico">
-                    </label>
-                         <input type="submit" class="bt-enviar1" name="" id="" value="Enviar">
-                    </label>
-                </from>
-            </div>
-        </section>
-</div>
-    <section id="Pie">
-        <div class="pie de pagina">
-            <div class="p-pie">
-                <img src="Imagenes/Fruta de Estación.png"> 
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="conocenos">
+                <img src="Imagenes/Fruta de Estación-negativo.png"> 
                 <p>es una de las mejores empresas de venta de alimentos artesanales, el resultado será mucho más bueno y tendrá un sabor como nunca antes habías probado.</p>
                 <div>
                     <div class="direccion">
@@ -186,12 +178,46 @@
                         <p>9226413284</p>
                     </div>
                     <div class="direccion">
-                        <img src="Imagenes/CARTA.png">
+                        <img src="Imagenes/Carta.png">
                         <p>frutaestación@gmil.com</p>
                     </div>
                 </div>
             </div>
+            <div class="link">
+                <h3>INFORMACIÓN</h3>
+                <ul>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Enlace</a></li>
+                    <li><a href="#">Descargas</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>NAVEGACIÓN</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Promociones</a></li>
+                    <li><a href="#">Cupones</a></li>
+                    <li><a href="#">Destacados</a></li>
+                </ul>
+            </div>
+            <div class="link">
+                <h3>LEGAL</h3>
+                <ul>
+                    <li><a href="#">Accesibilidad</a></li>
+                    <li><a href="#">Pólitica de privacidad</a></li>
+                    <li><a href="#">Pólitica cookis</a></li>
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Condiciones de compras</a></li>
+                    <li><a href="#">Mapa web</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
-    </from>
-</seleccion>
+
+    </footer>
+</body>
+</html>
