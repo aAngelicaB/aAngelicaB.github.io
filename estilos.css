@@ -53,6 +53,10 @@
 
 }
 
+.logo {
+  width: 80px;
+}
+
 .menu .navbar ul li a {
   font-size: 18px;
   list-style-type: none;
@@ -60,7 +64,7 @@
   gap: 1rem;
   padding: 20px;
   font-family: "Inter";
-  color: #DA3939;
+  color: #AD1F1F;
   display: block;
   font-weight: 600;
 }
@@ -86,19 +90,19 @@
   font-family: "Jua";
   font-size: 50px;
   line-height: 45px;
-  color:#598416
+  color:#3F610F;
 }
 
 .header-txt p{
   font-size: 16px;
   font-family: "Jua";
-  color: #598416;
+  color: #3F610F;
 }
 
 .btn-enviar {
   display: inline-block;
   padding: 13px 25px;
-  background: #DA3939;
+  background: #AD1F1F;
   text-transform: capitalize;
 }
 
@@ -112,13 +116,15 @@
   justify-items: center;
 }
 
+.formulario{
+  text-decoration: none;
+}
 
 .header-txt {
   width: 50%;
 }
 
 .header img {
-  width: 60%;
   text-align: right;
 }
 
@@ -130,7 +136,7 @@
   max-width: 1140px;
   margin: 0 auto;
   padding: 50px 0;
-  color:#598416
+  color:#3F610F;
 }
 
 .header-txt .formulario {
@@ -139,7 +145,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  color: #598416;
+  color: #3F610F;
+  text-decoration: none;
 }
 
 
@@ -150,7 +157,7 @@
   background-size: cover;
   padding: 10px 0;
   text-align: center;
-  background-color: #DA3939;
+  background-color: #AD1F1F;
 }
 
 .beneficios h2 {
@@ -180,6 +187,17 @@
   font-weight: 800;
 }
 
+.bnt-1 {
+  color: #AD1F1F;
+  border: 10px;
+  background-color: #ffff;
+  width: 80%;
+  font-size: 16px;
+  font-family: "Inter";
+}
+
+
+
 .cliente {
   margin: -5px;
   padding: 50px 0;
@@ -190,7 +208,7 @@
   font-size: 50px;
   font-family: "Jua";
   margin-bottom: 50px;
-  color: #598416;
+  color: #3F610F;
 }
 
 .cliente-1 {
@@ -216,7 +234,7 @@
 
 .cliente-in p{
   font-size: 16px;
-  color: #598416;
+  color: #3F610F;
   font-weight: 900;
 }
 
@@ -238,14 +256,14 @@
   padding: 50px 0;
   text-align: center;
   flex-direction: column;
-  background-color: #FEC0C0;
+  background-color: #ffff;
 }
 
 .menu-contacto h2{
   font-size: 50px;
   font-family: "Jua";
   margin-bottom: 50px;
-  color: #DA3939;
+  color: #AD1F1F;
 }
 
 .menu-content {
@@ -264,29 +282,30 @@
   font-size: 16px;
   font-weight: 800;
   margin-bottom: 25px;
-  color: #DA3939;
+  color: #AD1F1F;
 }
 
 .menu-1 {
   grid-template-columns: repeat(2,1fr);
 }
 
-.menu-1.rellenar {
+.menu-1,.rellenar {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   gap: 10px;
+  border: 50px;
 }
 
 .from.rellenar{
   flex-direction: column;
+  border: 50px;
 }
 
 .footer {
   padding: 50px 0;
-  background-color: #598416;
+  background-color: #3F610F;
 }
 
 .footer-content { 
@@ -335,7 +354,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #DA3939;
+    background-color: #AD1F1F;
     display: none;
   }
 
@@ -357,7 +376,7 @@
 
   .header-content{
     flex-direction: column;
-    padding: 100px 30px 30px 30px ;
+    padding: 30px 30px 30px 30px ;
     text-align: center;
   }
 
@@ -368,11 +387,14 @@
   }
 
   .header-txt h1 {
-    font-size: 60px;
-    line-height: 70px;
-    margin-bottom: 25px;
+    font-size: 50px;
+    line-height: 50px;
+    font-size: 50px;
   }
 
+  .header-txt p{
+    font-size: 25px;
+  }
   .header-img{
     width: 100%;
   }
@@ -383,11 +405,12 @@
 
   .beneficios{
     padding: 30px;
-    background-color: #DA3939;
+    background-color: #AD1F1F;
   }
 
   .beneficios h2{
     margin: 0;
+    font-size: 40px;
   }
 
   .beneficios-content{
@@ -402,6 +425,11 @@
 
   .cliente {
     padding: 30px;
+  }
+
+
+  .cliente h2{
+    font-size: 40px;
   }
 
   .cliente-1 {
@@ -432,8 +460,12 @@
     padding: 30px;
   }
 
+  .menu-1, .rellenar{
+    align-items: none;
+  }
   .menu-contacto h2 {
     margin-bottom: 10px;
+    font-size: 40px;
   }
 
   .menu-content {
@@ -451,5 +483,6 @@
 
   .conocenos {
     text-align: center;
+    width: 100%;
   }
 }
