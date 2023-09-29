@@ -31,8 +31,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 40vh;
-  padding: 0 30px 30px 30px;
+  min-height: 10px;
+  padding: 0 30px 0px 30px;
 }
 
 .menu {
@@ -77,8 +77,16 @@
   display: none;
 }
 
+.logo{
+max-width: 5rem;
+}
+
 .menu-icono{
   width: 25px;
+}
+
+.menu img{
+  width: 50%;
 }
 
 .menu label {
@@ -90,17 +98,21 @@
   font-family: "Jua";
   font-size: 50px;
   line-height: 45px;
-  color:#3F610F;
+  color:#006100;
 }
 
 .header-txt p{
   font-size: 16px;
   font-family: "Jua";
-  color: #3F610F;
+  color: #006100;
 }
 
 .btn-enviar {
   display: inline-block;
+  font-size: 18px;
+  color: #ffff;
+  border: none;
+  border-radius: 40px;
   padding: 13px 25px;
   background: #AD1F1F;
   text-transform: capitalize;
@@ -114,6 +126,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
+  padding: 0px 0px 30px 0px;
 }
 
 .formulario{
@@ -121,22 +134,24 @@
 }
 
 .header-txt {
-  width: 50%;
+  width: 75%;
 }
 
 .header img {
   text-align: right;
+  width: 50%;
 }
 
 .header-img img {
   width: 500px;
+  height: 200px;
 }
 
 .portada{
   max-width: 1140px;
   margin: 0 auto;
   padding: 50px 0;
-  color:#3F610F;
+  color:#006100;
 }
 
 .header-txt .formulario {
@@ -145,7 +160,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  color: #3F610F;
+  color: #006100;
   text-decoration: none;
 }
 
@@ -208,7 +223,7 @@
   font-size: 50px;
   font-family: "Jua";
   margin-bottom: 50px;
-  color: #3F610F;
+  color: #006100;
 }
 
 .cliente-1 {
@@ -234,7 +249,7 @@
 
 .cliente-in p{
   font-size: 16px;
-  color: #3F610F;
+  color: #006100;
   font-weight: 900;
 }
 
@@ -305,7 +320,7 @@
 
 .footer {
   padding: 50px 0;
-  background-color: #3F610F;
+  background-color: #006100;
 }
 
 .footer-content { 
@@ -340,6 +355,60 @@
 
 
 
+
+
+
+.fruta h2{
+  color: #006100;
+  font-family: "Jua";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 35px;
+}
+
+.fruta h3{
+  color: #006100;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 35px;
+}
+
+.fruta {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.fruta-content {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 35px
+}
+
+.fruta-1 img{
+  width: 250px;
+}
+
+
+
+.privacidad h2{
+  color: #006100;
+  font-family: "Jua";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 35px;
+}
+
+
+
+
+
+
 @media (max-width:991px){
   .menu {
     padding: 30px;
@@ -351,11 +420,15 @@
 
   .menu .navbar {
     position: absolute;
-    top: 100%;
+    top: 14%;
     left: 0;
     right: 0;
     background-color: #AD1F1F;
     display: none;
+  }
+
+  .navbar ul{
+    flex-direction: column;
   }
 
   .menu .nav ul li {
@@ -401,6 +474,7 @@
 
   .header-img img {
     width: 100%;
+    display: none;
   }
 
   .beneficios{

@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+</head>
+<body>
+<canvas id="7b3a6ccb63014eb5955ed77d44f6d625"></canvas>
+<script>
+var images=['data:image/bmp;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAA8CAYAAADbl8wjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVHhe7dihEQAhEARB8k+aN6coxvGuO4RRW7s2V8IEYYIwQZggTBAmCBOECcKEBQAAAPCTuR84CBOECcIEYYIwQZggTBAmCBNm/wIAAAA8N/cDB2GCMEGYIEwQJggThAnCBGGu9v4ANHSxEcam9n0AAAAASUVORK5CYII='];function LoadImagesAndRender(){var loadedImages=0;for(var i=0;i<images.length;i++){var source=images[i];images[i]=new Image();images[i].src=source;images[i].onload=function(){loadedImages++;if (loadedImages==images.length){Render();}};}}function Render(){let a=document.getElementById('7b3a6ccb63014eb5955ed77d44f6d625');let b=a.getContext('2d');a.width=70;a.height=60;b.drawImage(images[0],0,0,70,60,0,0,70,60);}window.addEventListener('onload',LoadImagesAndRender());
+</script>
+</body>
+</html>
